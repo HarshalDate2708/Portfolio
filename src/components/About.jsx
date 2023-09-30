@@ -5,11 +5,15 @@ import { styles } from "../styles";
 import { services } from "../constants";
 import {fadeIn,textVariant} from '../utils/motion';
 import Photo from "./Photo";
+import { SectionWrapper } from "../hoc";
+// import {SectionWrapper} from '../hoc/SectionWrapper'
+
 
 const About = ()=>{
 
     return (
-        <div className={`${styles.paddingX} h-screen w-full mt-10 md:mt-8 sm:mt-6`}>
+        <div className={`h-screen w-full`}>
+          {/* mt-10 md:mt-8 sm:mt-6 */}
           <motion.div>
             <p className={`${styles.sectionSubText}`}> Introduction</p>
             <h2 className={`${styles.sectionHeadText} mt-4 sm:mt-2`}>About Me</h2>
@@ -36,4 +40,5 @@ const About = ()=>{
 
 }
 
-export default About;
+export default SectionWrapper(About,"About");
+// export default About;
