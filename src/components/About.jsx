@@ -12,15 +12,15 @@ import { SectionWrapper } from "../hoc";
 const About = ()=>{
 
     return (
-        <div className={`h-screen w-full`}>
+        <div className={`w-full`}>
           {/* mt-10 md:mt-8 sm:mt-6 */}
-          <motion.div>
+          <motion.div variants={textVariant()}>
             <p className={`${styles.sectionSubText}`}> Introduction</p>
             <h2 className={`${styles.sectionHeadText} mt-4 sm:mt-2`}>About Me</h2>
           </motion.div>
           <motion.div className="flex flex-wrap items-center justify-start sm:justify-center xs:justify-center md:justify-start">
             <motion.p
-            variants={fadeIn("","",0.1,1)}
+            variants={fadeIn("right","",1,1)}
             className="mt-5 lg:mt-7 sm:mt-2 text-secondary w-[70%] leading-10 lg:text-[20px] md:text-[17px] md:w-[70%] sm:text-[15px] sm:leading-7 sm:w-full xs:text-[13px] xs:leading-5 xs:w-full text-[13px]"
             >
                 Hii👋 there! I'm skilled software developer with experience in Javascript, Typescript and Python. Along with expertise in framework like React, Node JS and Angular. 
@@ -30,9 +30,9 @@ const About = ()=>{
                 to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together
                 to turn your ideas into captivating digital experiences that leave a lasting impression.  
             </motion.p>
-            <div>
+            <motion.div variants={fadeIn("left","",1,1)}>
                 <Photo />
-            </div>
+            </motion.div>
           </motion.div>
           
         </div>

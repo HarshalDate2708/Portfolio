@@ -3,6 +3,8 @@ import {BrowserRouter} from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
+// import Skills from './components/Skills'
+import Skills from './components/Skills';
 const App = () => {
 
   return (
@@ -14,6 +16,7 @@ const App = () => {
             {/* <p>Harshal</p> */}
           </div>
           <About />
+          <Skills />
       </div>
     </BrowserRouter>
   )

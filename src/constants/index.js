@@ -12,18 +12,19 @@ import {
   tailwind,
   nodejs,
   mongodb,
+  python,
   git,
-  figma,
-  docker,
+  Angular,
   meta,
   starbucks,
   tesla,
   shopify,
   carrent,
   jobit,
-  tripguide,
-  threejs,
-  hdlogo,
+  tripguide
+  
+  
+  
 } from "../assets";
 
 export const navLinks = [
@@ -70,49 +71,46 @@ const technologies = [
     icon: css,
   },
   {
-    name: "JavaScript",
+    name: "JAVASCRIPT",
     icon: javascript,
   },
   {
-    name: "TypeScript",
+    name: "TYPESCRIPT",
     icon: typescript,
   },
   {
-    name: "React JS",
+    name: "REACT JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
+    name: "REDUX",
     icon: redux,
   },
   {
-    name: "Tailwind CSS",
+    name: "TAILWIND CSS",
     icon: tailwind,
   },
   {
-    name: "Node JS",
+    name: "NODE JS",
     icon: nodejs,
   },
   {
-    name: "MongoDB",
+    name: "MONGO DB",
     icon: mongodb,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "ANGULAR",
+    icon: Angular,
   },
   {
-    name: "git",
+    name: "GIT",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
+    name: "PYTHON",
+    icon: python,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
+
 ];
 
 const experiences = [

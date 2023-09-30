@@ -29,14 +29,17 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
-import hdlogo from "./hdlogo.svg"
-import profile from "./profile.jpg"
+import hdlogo from "./hdlogo.svg";
+import profile from "./profile.jpg";
+import python from "./tech/py.png"
+import Angular from "./tech/angular.png"
 
 export {
   profile,
   logo,
   hdlogo,
   backend,
+  Angular,
   creator,
   mobile,
   web,
@@ -63,4 +66,5 @@ export {
   carrent,
   jobit,
   tripguide,
+  python
 };
