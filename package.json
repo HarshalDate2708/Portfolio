@@ -22,7 +22,8 @@
     "react-spinners": "^0.13.8",
     "react-tilt": "^1.0.2",
     "react-vertical-timeline-component": "^3.6.0",
-    "three": "^0.156.1"
+    "three": "^0.156.1",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
