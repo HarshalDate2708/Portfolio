@@ -33,9 +33,16 @@ import hdlogo from "./hdlogo.svg";
 import profile from "./profile.jpg";
 import python from "./tech/py.png"
 import Angular from "./tech/angular.png"
+import Resume from "./Resume/Harshal_Date(Resume).pdf"
+import logo1 from "./logo1.svg"
+import logo2 from "./logo2.svg"
+import logo4 from "./logo4.svg"
 
 export {
   profile,
+  logo1,
+  logo2,
+  logo4,
   logo,
   hdlogo,
   backend,
@@ -66,5 +73,6 @@ export {
   carrent,
   jobit,
   tripguide,
-  python
+  python,
+  Resume
 };

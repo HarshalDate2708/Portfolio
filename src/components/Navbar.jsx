@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { styles } from "../styles";
 import { Link } from "react-router-dom";
 import { navLinks } from "../constants/index.js";
-import {logo,menu,close,hdlogo} from '../assets';
+import {Resume,menu,close,hdlogo,logo4} from '../assets';
 const Navbar = () =>{
 
     const [active,setActive] = useState("");
@@ -20,7 +20,7 @@ const Navbar = () =>{
                     window.scrollTo(0,0);
                  }}
                 >
-                    <img src={hdlogo} alt="logo" className="w-11 h-11 object-contain"></img>
+                    <img src={logo4} alt="logo" className="w-11 h-11 object-contain"></img>
                     <p className="text-white text-[18px] font-bold cursor-pointer flex">Harshal &nbsp; &nbsp; <span className="hidden md:block"> {"{"} Software Engineer {"}"}</span></p>
                 </Link>
                 <ul className="list-none hidden sm:flex flex-row items-center gap-10">
@@ -41,7 +41,17 @@ const Navbar = () =>{
                         )
                         
                     }
-                    {/* <li className="bg-[#804dee] rounded p-1"> Resume</li> */}
+                    <li >  
+                    <a
+                        href={Resume}
+                        download="Harshal Date(Resume)"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <button
+                            className="bg-[#804dee] py-1 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+                        >Get Resume</button>
+                    </a> </li>
             
                 </ul>
                 <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -75,7 +85,17 @@ const Navbar = () =>{
                         
                     }
                     
-            
+                    <li >  
+                    <a
+                        href={Resume}
+                        download="Harshal Date(Resume)"
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <button
+                            className="bg-[#804dee] py-1 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+                        >Get Resume</button>
+                    </a> </li>
                 </ul>
                 </div>
                 </div>
