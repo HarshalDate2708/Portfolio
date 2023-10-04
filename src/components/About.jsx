@@ -12,7 +12,7 @@ import { SectionWrapper } from "../hoc";
 const About = ()=>{
 
     return (
-        <div className={`w-full`}>
+        <div className={`w-full`} >
           {/* mt-10 md:mt-8 sm:mt-6 */}
           <motion.div variants={textVariant()}>
             <p className={`${styles.sectionSubText}`}> Introduction</p>

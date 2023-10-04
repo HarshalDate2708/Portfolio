@@ -7,6 +7,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Contact from './components/Contact';
 import StarsCanvas from './components/Canvas/Stars';
+import Footer from './components/Footer';
 const App = () => {
 
   return (
@@ -21,9 +22,10 @@ const App = () => {
           <Skills />
           <Projects />
           <div className='relative z-0'>
-          <Contact />
-          <StarsCanvas />
-        </div>
+            <Contact />
+            <StarsCanvas />
+          </div>
+          <Footer />
       </div>
     </BrowserRouter>
   )

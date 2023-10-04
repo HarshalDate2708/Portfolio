@@ -7,7 +7,7 @@ const Hero = () =>{
 
     return (
         <section className='relative w-full h-screen mx-auto'>
-            <div className={`${styles.paddingX} absolute inset-0 top-[100px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
+            <div data-aos="slide-up" className={`${styles.paddingX} absolute inset-0 top-[100px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
                 <div className='flex flex-col justify-center items-center mt-1'>
                     <div className='h-5 w-5 rounded-full bg-[#915eff]'/>
                     <div className='w-1 h-60 bg-gradient-to-b from-[#804dee]'/>
@@ -28,14 +28,16 @@ const Hero = () =>{
                             />
                         </h1>
                     </div>
-                    <div className={`${styles.heroSubText}  text-white-100`}>
+                    <div data-aos="fade-left" data-aos-delay="3000" className={`${styles.heroSubText}  text-white-100`}>
                             <motion.p>I am frontend developer. Passionate about developing the web-applications using React, Next js and angular </motion.p>
                         
                         
                     </div>
                 </div>
             </div>
-            <ComputersCanvas />
+            
+            <ComputersCanvas  />
+            
             <div className='absolute xs:bottom-5 bottom-10 w-full flex justify-center items-center'>
                 <a href="#About">
                     <div className='w-[20px] h-[40px] rounded-3xl border-2 border-secondary flex justify-center items-starts p-1'>

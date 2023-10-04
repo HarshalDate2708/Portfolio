@@ -14,14 +14,15 @@ const Skills = () =>{
     })
     return (
         <motion.div className="flex flex-col justify-center items-center "
-        variants={zoomIn(1,1)}
+        // variants={zoomIn(1,1)}
+        data-aos="zoom-in" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1000"
         > 
                 <h2 className={`${styles.sectionHeadText}`}>Skills</h2>
-            <motion.div className="flex flex-row flex-wrap justify-center  mt-10   mx-10 rounded-2xl xs:p-0 sm:p-1 md:p-3 p-5"
+            <motion.div className="flex flex-row flex-wrap justify-center  mt-10 border-2 border-[#804dee]  mx-10 rounded-2xl xs:p-0 sm:p-1 md:p-3 p-5"
             
-                initial={{borderTop : "0px solid transparent",height:0,width:"10px"}}
-                animate={{border : "2px solid #804dee", height:"100%" ,width:"100%"}}
-                transition={{duration:0.5,delay:0.4}}
+                // initial={{borderTop : "1px solid transparent",height:0,width:"10px"}}
+                // animate={{border : "2px solid #804dee", height:"100%" ,width:"100%"}}
+                // transition={{duration:0.5,delay:0.4}}
             >
                 {
                     technologies.map((skill)=>(

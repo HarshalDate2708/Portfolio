@@ -41,6 +41,7 @@ const Navbar = () =>{
                         )
                         
                     }
+                    {/* <li className="bg-[#804dee] rounded p-1"> Resume</li> */}
             
                 </ul>
                 <div className="sm:hidden flex flex-1 justify-end items-center">
@@ -73,6 +74,7 @@ const Navbar = () =>{
                         )
                         
                     }
+                    
             
                 </ul>
                 </div>
