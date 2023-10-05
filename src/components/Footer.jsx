@@ -12,6 +12,7 @@ const Footer = () => {
         <div className=" flex items-center justify-center gap-10 lg:gap-10 sm:gap-5">
               <a
           data-aos="fade-up" data-aos-duration="1000"
+          target="_blank"
             href="https://www.linkedin.com/in/harshal-date-b233441b1"
             className="box font-medium text-white   flex items-center justify-center flex-col"
           >
@@ -19,6 +20,7 @@ const Footer = () => {
           </a>
           <a
           data-aos="fade-up" data-aos-duration="1200"
+          target="_blank"
             href="https://github.com/HarshalDate2708"
             className="box font-medium text-white  flex items-center justify-center flex-col"
           >
@@ -26,6 +28,7 @@ const Footer = () => {
           </a>
           <a
           data-aos="fade-up" data-aos-duration="1400"
+          target="_blank"
             href="https://www.instagram.com"
             className="box font-medium text-white  flex items-center justify-center flex-col"
           >

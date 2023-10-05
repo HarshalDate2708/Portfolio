@@ -91,7 +91,7 @@ const Contact = () => {
                         />
                     </label>
                     <label className="flex flex-col">
-                        <span className="text-white font-medium mb-2">Your Name</span>
+                        <span className="text-white font-medium mb-2">Your Message</span>
                         <textarea 
                             rows="4"
                             name="message"

@@ -199,31 +199,36 @@ const projects = [
   {
     name: "Portfolio",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Discover my React-powered portfolio website, where design meets functionality. Explore my web development journey through sleek interfaces and efficient code.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
+      
       {
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "three-js",
+        color: "green-text-gradient",
+      },
     ],
     image: carrent,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/HarshalDate2708/Portfolio",
   },
   {
     name: "Chatbot",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "An NLP-based chatbot will generate automatic responses for any query regarding college information. Users can ask any questions or queries and the web-based chatbot will give a proper response from the database.",
     tags: [
       {
-        name: "react",
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NLP",
         color: "blue-text-gradient",
       },
       {
@@ -231,12 +236,20 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "flask",
+        color: "green-text-gradient",
+      },
+      {
+        name: "HTML",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
     image: jobit,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/HarshalDate2708/College_Enquiry_Chatbot",
   },
   {
     name: "E-commerce",
