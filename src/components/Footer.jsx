@@ -12,21 +12,21 @@ const Footer = () => {
         <div className=" flex items-center justify-center gap-10 lg:gap-10 sm:gap-5">
               <a
           data-aos="fade-up" data-aos-duration="1000"
-            href=""
+            href="https://www.linkedin.com/in/harshal-date-b233441b1"
             className="box font-medium text-white   flex items-center justify-center flex-col"
           >
                 <FaLinkedin className=" text-white text-3xl hover:scale-125 hover:text-[#804dee]  cursor-pointer" />
           </a>
           <a
           data-aos="fade-up" data-aos-duration="1200"
-            href=""
+            href="https://github.com/HarshalDate2708"
             className="box font-medium text-white  flex items-center justify-center flex-col"
           >
                 <FaGithub className=" text-white text-3xl hover:scale-125 hover:text-[#804dee]  cursor-pointer" />
           </a>
           <a
           data-aos="fade-up" data-aos-duration="1400"
-            href=""
+            href="https://www.instagram.com"
             className="box font-medium text-white  flex items-center justify-center flex-col"
           >
                 <RiInstagramFill className=" text-white text-3xl hover:scale-125 hover:text-[#804dee]  cursor-pointer" />
