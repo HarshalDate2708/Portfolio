@@ -28,13 +28,20 @@ const Skills = () =>{
                     technologies.map((skill)=>(
                         <div className=""  key={skill.name}>
 
-                                    <div className="ml-2 mr-2">
-                                        <div className="lg:w-28 lg:h-28 md:h-24 md:w-24 sm:h-20 sm:w-20 xs:h-16 xs:w-16">
-                                        <BallCanvas  icon={skill.icon} /> 
+                                    {/* <div className="flex flex-col items-center ml-4 mr-4 mt-6 mb-6"> */}
+                                    <div className="flex flex-col items-center m-6">
+
+                                        <div className="w-24 h-24 md:h-20 md:w-20 sm:h-18 sm:w-18 xs:h-16 xs:w-16">
+                                        {/* <BallCanvas  icon={skill.icon} />  */}
+                                        <img src={skill.icon}  className="rounded-full h-full"/>
                                         </div>
-                                        <div>
+                                        <div className="al mt-4">
+                                            <p>{skill.name}</p>
+                                        </div>
+                                        
+                                        {/* <div>
                                             <p className="text-center lg:text-[14px] md:text-[12px] sm:text-[10px] xs:text-[10px] mb-10">{skill.name}</p>
-                                        </div>
+                                        </div> */}
                                     </div>
 
                         </div>

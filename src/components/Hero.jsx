@@ -10,9 +10,9 @@ const Hero = () =>{
             <div data-aos="slide-up" className={`${styles.paddingX} absolute inset-0 top-[100px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
                 <div className='flex flex-col justify-center items-center mt-1'>
                     <div className='h-5 w-5 rounded-full bg-[#915eff]'/>
-                    <div className='w-1 h-60 bg-gradient-to-b from-[#804dee]'/>
+                    <div className='w-1 bg-gradient-to-b from-[#804dee]' style={{height:"70vh"}}/>
                 </div>
-                <div className='w-[60%] flex flex-col justify-left items-left'>
+                <div className='w-[55%] flex flex-col justify-left items-left'>
                     <div className={`${styles.heroHeadText} text-white`}>
                         {/* <h1>Hi I'm <span className='text-[#804dee]'>Harshal</span></h1> */}
                         <h1>
@@ -28,7 +28,7 @@ const Hero = () =>{
                             />
                         </h1>
                     </div>
-                    <div data-aos="fade-left" data-aos-delay="3000" className={`${styles.heroSubText}  text-white-100`}>
+                    <div data-aos="fade-left" data-aos-delay="3000" className={`${styles.heroSubText}  text-white-100 mt-10`}>
                             <motion.p>I am frontend developer. Passionate about developing the web-applications using React, Next js and angular </motion.p>
                         
                         
