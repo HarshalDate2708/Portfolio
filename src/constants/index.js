@@ -221,7 +221,7 @@ const projects = [
   {
     name: "Chatbot",
     description:
-      "An NLP-based chatbot will generate automatic responses for any query regarding college information. Users can ask any questions or queries and the web-based chatbot will give a proper response from the database.",
+      "An NLP-based chatbot will generate automatic responses for any query regarding college information. Users can ask any questions and the web-based chatbot will give a proper response from the database.",
     tags: [
       {
         name: "python",

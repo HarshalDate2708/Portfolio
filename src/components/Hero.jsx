@@ -2,6 +2,7 @@ import {motion} from 'framer-motion';
 import { styles } from '../styles';
 import  ComputersCanvas  from "./Canvas/Computers";
 import Typewriter from 'typewriter-effect';
+import {desktopImage} from '../assets';
 
 const Hero = () =>{
 
@@ -28,7 +29,7 @@ const Hero = () =>{
                             />
                         </h1>
                     </div>
-                    <div data-aos="fade-left" data-aos-delay="3000" className={`${styles.heroSubText}  text-white-100 mt-10`}>
+                    <div data-aos="fade-left" data-aos-delay="3000" className={`${styles.heroSubText}  text-white-100 `}>
                             <motion.p>I am frontend developer. Passionate about developing the web-applications using React, Next js and angular </motion.p>
                         
                         
@@ -36,7 +37,15 @@ const Hero = () =>{
                 </div>
             </div>
             
-            {/* <ComputersCanvas  /> */}
+
+            <ComputersCanvas  />
+
+            {/* <div className=" absolute w-[600px] h-[300px] md:h-200 md:w-200 sm:h-180 sm:w-180 xs:h-160 xs:w-160 mt-[40vh]" >
+
+
+            
+            <img src={desktopImage} className='h-full w-full'/>
+            </div> */}
             
             <div className='absolute xs:bottom-5 bottom-10 w-full flex justify-center items-center'>
                 <a href="#About">

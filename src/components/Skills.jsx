@@ -32,6 +32,7 @@ const Skills = () =>{
                                     <div className="flex flex-col items-center m-6">
 
                                         <div className="w-24 h-24 md:h-20 md:w-20 sm:h-18 sm:w-18 xs:h-16 xs:w-16">
+                                        
                                         {/* <BallCanvas  icon={skill.icon} />  */}
                                         <img src={skill.icon}  className="rounded-full h-full"/>
                                         </div>

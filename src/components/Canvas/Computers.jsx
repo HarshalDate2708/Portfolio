@@ -3,6 +3,8 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF, } from "@react-three/drei";
 
 import Loader from "../Loader";
+import {desktopImage} from '../../assets';
+
 
 const Computers = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
@@ -22,7 +24,7 @@ const Computers = ({ isMobile }) => {
       <pointLight intensity={3} />
       <primitive
         object={computer.scene}
-        scale={isMobile ? 0.350 : 0.55}
+        scale={isMobile ? 0.350 : 0.42}
         position={isMobile ? [0, -2.5, -0.50] : [0, -2.75, -1]}
         rotation={[-0.01, -0.2, -0.1]}
       />
@@ -36,7 +38,7 @@ const ComputersCanvas = () => {
 
   useEffect(() => {
     // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    const mediaQuery = window.matchMedia("(max-width: 800px)");
 
     // Set the initial value of the `isMobile` state variable
     setIsMobile(mediaQuery.matches);
@@ -56,6 +58,8 @@ const ComputersCanvas = () => {
   }, []);
 
   return (
+    <>
+    {!isMobile ? 
     <Canvas
       frameloop='demand'
       shadows
@@ -69,11 +73,21 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
+        {/* {!isMobile ? <Computers isMobile={isMobile} /> : <p>sds</p>} */}
         <Computers isMobile={isMobile} />
       </Suspense>
 
       <Preload all />
     </Canvas>
+
+    : 
+    <div className="flex flex-col items-center">
+      <img src={desktopImage} className="absolute mt-[450px] h-[30vh] w-[85vw] "/>
+    </div>
+    
+
+    }
+    </>
   );
 };
 
