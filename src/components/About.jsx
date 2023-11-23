@@ -18,7 +18,7 @@ const About = ()=>{
             <p className={`${styles.sectionSubText}`}> Introduction</p>
             <h2 className={`${styles.sectionHeadText} mt-4 sm:mt-2`}>About Me</h2>
           </motion.div>
-          <motion.div className="flex flex-wrap items-center justify-start sm:justify-center xs:justify-center md:justify-start">
+          <motion.div className="flex flex-wrap items-center lg:justify-start sm:justify-center xs:justify-center md:justify-start">
             <motion.p
             variants={fadeIn("right","",1,1)}
             className="mt-5 lg:mt-7 sm:mt-2 text-secondary w-[70%] leading-10 lg:text-[20px] md:text-[17px] md:w-[70%] sm:text-[15px] sm:leading-7 sm:w-full xs:text-[13px] xs:leading-5 xs:w-full text-[13px]"
