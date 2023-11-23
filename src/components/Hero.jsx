@@ -30,7 +30,7 @@ const Hero = () =>{
                         </h1>
                     </div>
                     <div data-aos="fade-left" data-aos-delay="3000" className={`${styles.heroSubText}  text-white-100 `}>
-                            <motion.p>I am frontend developer. Passionate about developing the web-applications using React, Next js and angular </motion.p>
+                            <motion.p> I am frontend developer. Passionate about developing the web-applications using React, Next js and angular </motion.p>
                         
                         
                     </div>
