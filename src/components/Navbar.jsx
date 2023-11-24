@@ -21,9 +21,9 @@ const Navbar = () =>{
                  }}
                 >
                     <img src={logo4} alt="logo" className="w-11 h-11 object-contain"></img>
-                    <p className="text-white text-[18px] font-bold cursor-pointer flex">Harshal &nbsp; &nbsp; <span className="hidden md:block"> {"{"} Software Engineer {"}"}</span></p>
+                    <p className="text-white text-[18px] font-bold cursor-pointer flex">Harshal &nbsp; &nbsp; <span className="hidden ns:block"> {"{"} Software Engineer {"}"}</span></p>
                 </Link>
-                <ul className="list-none hidden sm:flex flex-row items-center gap-10">
+                <ul className="list-none hidden md:flex flex-row items-center gap-10">
                     {
                         navLinks.map((navItem)=>(
                             <li 
@@ -54,7 +54,7 @@ const Navbar = () =>{
                     </a> </li>
             
                 </ul>
-                <div className="sm:hidden flex flex-1 justify-end items-center">
+                <div className="md:hidden flex flex-1 justify-end items-center">
                     <img
                     src={ toggle ? close : menu}
                     alt="menu"
