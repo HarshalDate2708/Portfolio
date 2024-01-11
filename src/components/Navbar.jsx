@@ -3,6 +3,7 @@ import { styles } from "../styles";
 import { Link } from "react-router-dom";
 import { navLinks } from "../constants/index.js";
 import {Resume,menu,close,hdlogo,logo4} from '../assets';
+import { toast } from "react-toastify";
 const Navbar = () =>{
 
     const [active,setActive] = useState("");
@@ -50,6 +51,9 @@ const Navbar = () =>{
                     >
                         <button
                             className="bg-[#804dee] py-1 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+                            onClick={()=>{ setTimeout(() => {
+                                toast.success("Resume downloaded successfully✅")
+                            }, 3000)}}
                         >Get Resume</button>
                     </a> </li>
             

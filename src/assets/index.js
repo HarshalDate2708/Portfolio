@@ -37,12 +37,18 @@ import Resume from "./Resume/Harshal_Date(Resume).pdf"
 import logo1 from "./logo1.svg"
 import logo2 from "./logo2.svg"
 import logo4 from "./logo4.svg"
-import desktopImage from "./desktop.png"
+import desktopImage from "./desktop.png";
+import userportal from "./user_portal.png";
+import portfolio from "./Portfolio.png";
+import profile_pic from "./Profile_pic.png"
 
 export {
   profile,
   logo1,
+  portfolio,
+  userportal,
   logo2,
+  profile_pic,
   logo4,
   logo,
   hdlogo,

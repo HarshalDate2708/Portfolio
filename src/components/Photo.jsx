@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 // import photo from '../assets'
-import {logo,menu,close,hdlogo,profile} from '../assets';
+import {profile_pic,profile} from '../assets';
 
 
 const Photo = () => {
@@ -14,7 +14,7 @@ const Photo = () => {
 
             <motion.img
 
-                src={profile} // Replace with your photo URL
+                src={profile_pic} // Replace with your photo URL
 
                 alt="Profile Photo"
                 whileHover={{ scale: 1.1 }}

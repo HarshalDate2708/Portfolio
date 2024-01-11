@@ -24,9 +24,7 @@ const About = ()=>{
             className="mt-5 lg:mt-7 sm:mt-2 text-secondary w-[70%] leading-10 lg:text-[20px] md:text-[17px] md:w-[70%] sm:text-[15px] sm:leading-7 sm:w-full xs:text-[13px] xs:leading-5 xs:w-full text-[13px]"
             >
                 Hii👋 there! I'm skilled software developer with experience in Javascript, Typescript and Python. Along with expertise in framework like React, Node JS and Angular. 
-                {/* I have worked on framework like React and Angular for developing interactive, dynamic and responsive web applications. Also, I'm  */}
-                {/* familiar with some backend framework like Node JS which can used to develope backend API using express.  */}
-                I'm self-motivated and quick learner.I like to work in challenging environment to prove my skills and utilize my knowledge
+                 I'm self-motivated and quick learner. I like to work in challenging environment to prove my skills and utilize my knowledge
                 to create efficient, scalable, and user-friendly solutions that solve real-world problems. Let's work together
                 to turn your ideas into captivating digital experiences that leave a lasting impression.  
             </motion.p>

@@ -8,12 +8,27 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import StarsCanvas from './components/Canvas/Stars';
 import Footer from './components/Footer';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
+
 const App = () => {
 
   return (
     <BrowserRouter>
       <div className='relative z-0 bg-primary'> 
           <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+          <ToastContainer
+            position="top-center"
+            autoClose={5000}
+            hideProgressBar={false}
+            newestOnTop={false}
+            closeOnClick
+            rtl={false}
+            pauseOnFocusLoss
+            draggable
+            pauseOnHover
+            theme="light"
+            />
             <Navbar />
             <Hero />
             {/* <p>Harshal</p> */}

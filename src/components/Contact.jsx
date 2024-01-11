@@ -6,23 +6,54 @@ import emailJS from "@emailjs/browser";
 import { styles } from "../styles";
 import   EarthCanvas  from "./Canvas/Earth";
 import { slideIn } from "../utils/motion";
-
+import { toast } from "react-toastify";
 
 const Contact = () => {
 
     const formRef = useRef();
+    const errorMsgObj = {
+        name: "Please enter valid name.",
+        email: "Please enter valid email.",
+        message : "Please enter valid message.",
+    }
+    const [errorMsg,setError] = useState(errorMsgObj)
+    const [isError,setIsError] = useState(false);
+
     const [formData, setFormData] = useState({
         name: "",
         email: "",
         message : "",
     });
     const [loading,setLoading] = useState(false);
+    
     const handleOnChange = (e) => {
         const {name , value } = e.target;
-        setFormData({...formData , [name]:value})
+        const data = {...formData , [name]:value}
+        setFormData((data)=>{
+            return {...formData , [name]:value}
+        })
+        value == "" ? setError({...errorMsg,[name]:`Please enter valid ${name}`}) : setError({...errorMsg,[name]:""});
+        value == "" ? setIsError(true) : setIsError(false);
+        
      }
+
+    const checkValidInput = () =>{
+        // console.log(formData.name)
+        
+        if(errorMsg.name!=="" || errorMsg.email!=="" || errorMsg.message!=="") {
+            setIsError(true)
+            return false
+        } else{
+            setIsError(false)
+            return true
+        } 
+        
+
+    }
     const handleOnSubmit = (e) => { 
         e.preventDefault();
+        console.log(isError)
+        if(checkValidInput()){
         setLoading(true);
         emailJS.send(
             'service_g2m4ft6',
@@ -38,19 +69,24 @@ const Contact = () => {
 
         ).then(()=>{
             setLoading(false);
-            alert('Thank you. I will get back to you as soon as possible.')
+            toast.success('Thank you. I will get back to you as soon as possible.')
             setFormData({
                 name:"",
                 email:"",
                 message:""
             })
+            setIsError(false)
+            setError(errorMsgObj)
         }, (error)=>{
             setLoading(false);
             console.log(error)
-            alert('Something went wrong! Please try again.')
+            toast.error('Something went wrong! Please try again.')
         }
         
         )
+        }else{
+            toast.warn('Please enter required information...')
+        }
     }
 
     return (
@@ -76,8 +112,9 @@ const Contact = () => {
                             value={formData.name}
                             onChange={handleOnChange}
                             placeholder="What's your name?"
-                            className="bg-tertiary py-2 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+                            className={`bg-tertiary py-2 px-6 placeholder:text-secondary text-white rounded-lg outlined-none ${errorMsg.name!=="" && isError ? "border-2 border-red-400 focus:outline-none" : "border-none"} font-medium`}
                         />
+                        {errorMsg.name!=="" && isError? <p style={{color:"red", fontWeight:"200"}}>{errorMsg.name}</p> : ""}
                     </label>
                     <label className="flex flex-col">
                         <span className="text-white font-medium mb-1">Your Email</span>
@@ -87,8 +124,9 @@ const Contact = () => {
                             value={formData.email}
                             onChange={handleOnChange}
                             placeholder="What's your email?"
-                            className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+                            className={`bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none ${errorMsg.email!=="" && isError ? "border-2 border-red-400 focus:outline-none" : "border-none"} font-medium `}
                         />
+                        {errorMsg.email!=="" && isError? <p style={{color:"red", fontWeight:"200"}}>{errorMsg.email}</p> : ""}
                     </label>
                     <label className="flex flex-col">
                         <span className="text-white font-medium mb-2">Your Message</span>
@@ -98,13 +136,16 @@ const Contact = () => {
                             value={formData.message}
                             onChange={handleOnChange}
                             placeholder="What do you want to say?"
-                            className="bg-tertiary py-2 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+                            className={`bg-tertiary py-2 px-6 placeholder:text-secondary text-white rounded-lg outlined-none ${errorMsg.message!=="" && isError ? "border-2 border-red-400 focus:outline-none" : "border-none"} font-medium`}
                         />
+                        {errorMsg.message!=="" && isError? <p style={{color:"red", fontWeight:"200"}}>{errorMsg.message}</p> : ""}
+
                     </label>
 
                     <button
                      type="submit"
                      className="bg-[#804dee] py-1 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+                     
                     >
                         {loading ? "Sending..." : "Send"}
                     </button>
