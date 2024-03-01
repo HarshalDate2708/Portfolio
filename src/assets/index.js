@@ -40,11 +40,16 @@ import logo4 from "./logo4.svg"
 import desktopImage from "./desktop.png";
 import userportal from "./user_portal.png";
 import portfolio from "./Portfolio.png";
-import profile_pic from "./Profile_pic.png"
+import profile_pic from "./Profile_pic.png";
+import chart from "./Chart.png";
+import chatbot from "./chatbot.png";
+
 
 export {
   profile,
   logo1,
+  chart,
+  chatbot,
   portfolio,
   userportal,
   logo2,
